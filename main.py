@@ -15,7 +15,7 @@ def main():
 
         # Cargar datos
         loader = Loader(cleaned_data)
-        loader.to_csv(Config.OUTPUT_PATH)
+        loader.to_sqlite()
     else:
         print("No se pudo extraer el archivo de datos.")
 
